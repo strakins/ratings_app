@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="container">
+        <div>
+            <img src="./assets/icon-star.svg" alt="Rate-Us" class="rating-star">
+            <h3 class="choose-one hidden">PLEASE SELCET A VALUE TO RATE</h3>
+        </div>
+        <div class="content">
+            <h3>How did we do?</h3>
+            <p>Please let us know how we did with your support 
+             request. All feedback is appreciated to help us
+             improve our offering!</p>
+        </div>
+        <div class="rating-list ">
+            <div class="rating-num num1">1</div>
+            <div class="rating-num num2">2</div>
+            <div class="rating-num num3">3</div>
+            <div class="rating-num num4">4</div>
+            <div class="rating-num num5">5</div>
+        </div>
+        <button type="submit" class="submit">Submit</button>
+    </section>
+    <section class="thanks-modal hidden">
+        <div class="modal-image">
+            <img src="./assets/illustration-thank-you.svg" alt="">
+        </div>
+        <div class="user-rating">
+            <p class="user-rating-value">
+                You Selected 4 out of 5
+            </p>
+        </div>
+        <div class="appreciate-content">
+            <h1>Thank you!</h1>
+            <p>We appreciate you taking the time to give a rating. <br>
+             If you ever need more support, don't hesitate to <br>
+             get in touch!</p>
+        </div>
+    </section>
+
+
+    <script src="./ratings.js"></script>
+</body>
+</html>
