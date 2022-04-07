@@ -98,7 +98,7 @@ button:hover {
 .thanks-modal {
     height: 500px;
     width: 500px;
-    background-color: hsl(216, 12%, 8%);
+    background-color: var(--background-color);
     border-radius: 10px;
 }
 .modal-image {
@@ -146,7 +146,13 @@ button:hover {
     color: white;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 800px) {
+    .container {
+        height: 400px;
+        width: 400px;
+        background-color: var(--background-color);
+        border-radius: 20px;
+    }
     .appreciate-content p {
         text-align: center;
         color: var(--fobt-color-gray);
@@ -168,4 +174,105 @@ button:hover {
         font-size: 1em;
         color: var(--fobt-color-gray);
     }
+}
+@media (max-width: 400px) {
+    .container {
+        height: 300px;
+        width: 300px;
+        background-color: var(--background-color);
+        border-radius: 20px;
+    }
+    .content{
+        margin-top: -0.6em;
+        padding: 1em 0.8em;
+    }
+    .content h3 {
+        font-weight: bold;
+        color: var(--font-color-white);
+        font-size: 1.3rem;
+        margin-bottom: 0.5em;
+    }
+    .content p {
+
+        line-height: 1.2em;
+        font-size: 0.8em;
+        color: var(--fobt-color-gray);
+    }
+    .appreciate-content p {
+        text-align: center;
+        color: var(--fobt-color-gray);
+        padding-top: 1rem;
+        font-size: 1rem;
+    }
+    .rating-list {
+        padding: 0.7em 1em;
+    }
+    button {
+        margin-left: 1rem;
+        margin-top: 1rem;
+        width: 90%;
+        padding: 8px;
+        text-transform: uppercase;
+        font-size: large;
+        font-weight: 500;
+        letter-spacing: 3px;
+        border-radius: 30px;
+        color: hsl(0, 0%, 100%);
+        border: none;
+        background-color: var(--element-text-orange);
+    }
+    .rating-num {
+        height: 2rem;
+        display: flex;
+        align-items: center;
+        padding: 20px 15px;
+        background-color: hsl(213, 19%, 18%);
+        border-radius: 50%;
+        color: hsl(217, 12%, 63%);
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+    .thanks-modal {
+        height: 350px;
+        width: 300px;
+        background-color: var(--background-color);
+        border-radius: 10px;
+        padding-bottom: 20px;
+
+    }
+    .modal-image {
+        padding: 10px;
+    }
+    .modal-image img {
+        width: 150px;
+    }
+    .user-rating {
+        display: flex;
+        justify-content: center;
+        margin-top: -20px;
+    }
+    .user-rating-value {
+        color: var(--element-text-orange);
+        padding: 10px;
+        font-weight: 700;
+        font-size: 1rem;
+        background-color: var(--element-dark-blue);
+        border-radius: 30px;
+        text-align: center;
+        width:  250px;
+        margin-bottom: 20px;
+    }
+    .appreciate-content h1 {
+        text-align: center;
+        color: var(--font-color-white);
+        font-size: 1.5rem;
+    }
+    .appreciate-content p {
+        text-align: center;
+        color: var(--fobt-color-gray);
+        padding-top: 1rem;
+        font-size: 0.8rem;
+        padding: 10px;
+    }
+    
 }
